@@ -1,0 +1,26 @@
+{
+  "name": "lispyscript2",
+  "version": "0.0.1",
+  "description": "A Lispy ES6 Language",
+  "keywords": [
+    "Lisp",
+    "JavaScript",
+    "ES6",
+    "Compiler"
+  ],
+  "directories": {
+    "lib": "./lib"
+  },
+  "main": "./lib/ls",
+  "bin": {
+    "lispy2": "./bin/lispy2.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Santosh Rajan",
+  "license": "MIT",
+  "dependencies": {
+    "escodegen": "^1.6.1"
+  }
+}
