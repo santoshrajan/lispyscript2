@@ -1,4 +1,4 @@
-#!/usr/bin/env node --harmony_arrow_functions
+#!/usr/bin/env node
 
 require('../lib/command')
 
