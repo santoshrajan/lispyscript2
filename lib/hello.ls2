@@ -1,1 +1,1 @@
-( function square (a) (* a a))
+( function square (a) (* a a) )
