@@ -1,1 +1,1 @@
-( function abc (x) (var x 5) (x) )
+(var x z)
