@@ -1,5 +1,1 @@
-(var a 2)
-(=> (x y) (var z y) (x))
-(var a 2)
-(function square (x) (var z y) (x))
-(var a 2)
+(* x x)
