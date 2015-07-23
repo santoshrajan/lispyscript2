@@ -13,7 +13,8 @@
   },
   "main": "./lib/ls",
   "bin": {
-    "lispy2": "./bin/lispy2.js"
+    "lispy2": "./bin/lispy2.js",
+    "ls2test": "./bin/ls2test.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
