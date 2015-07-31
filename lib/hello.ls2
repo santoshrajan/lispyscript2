@@ -1,1 +1,5 @@
-( var a (x) )
+( macro print (str)
+    (console.log ~str)
+)
+( var a 5 )
+( print "Hello World" )
