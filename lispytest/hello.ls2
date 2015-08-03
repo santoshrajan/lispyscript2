@@ -1,5 +1,4 @@
-( macro print (str)
-    (console.log ~str)
+(function square (a)
+    (* a a)
 )
-( var a 5 )
-( print "Hello World" )
+(console.log (square 4))
