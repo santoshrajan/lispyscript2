@@ -18,7 +18,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Santosh Rajan",
+  "author": "Mansi Shah, Santosh Rajan",
   "license": "MIT",
   "dependencies": {
     "escodegen": "^1.6.1",
