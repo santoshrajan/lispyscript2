@@ -1,4 +1,3 @@
-(function square (a)
-    (* a a)
-)
-(console.log (square 4))
+(function abc (a)
+	(var z a)
+ 	z)
