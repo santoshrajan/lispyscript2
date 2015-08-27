@@ -1,4 +1,4 @@
-(function abc () ("Mansi"))
+(function abc (x ...arg) arg)
 (function abc () (x))
 (function abc () (x (* x x)))
 (function abc () (x y))
