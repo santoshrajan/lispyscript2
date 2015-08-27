@@ -1,4 +1,4 @@
-(var a "Mansi")
+(var a 5)
 (macro square (x)
 	(console.log ~x ~rest))
-(square "Hello" a)
+(square "Hello" "Mansi" a)
