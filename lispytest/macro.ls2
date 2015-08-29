@@ -1,0 +1,3 @@
+(macro print ()
+	(console.log ~...rest))
+(print "Hey there, how you doing!")
