@@ -1,5 +1,1 @@
-(macro print (x)
-	(var x "Hello")
-	(console.log x ~...rest))
-(print "Hey" 5 (square))
-(var a 32)
+(var a (=> () 10))
