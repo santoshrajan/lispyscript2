@@ -1,1 +1,1 @@
-(var a (=> () 10))
+(if ((* 3 0)) ((var str "CONSEQUENCE") (console.log str)) ((var str "ALTERNATE") (console.log str)))
