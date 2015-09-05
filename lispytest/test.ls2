@@ -1,0 +1,42 @@
+# If these tests run, you haven't broken the code
+
+#;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+# Simple variable declaration
+(var a 5)
+# Output: var a = 5;
+
+#;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+# Simple function declaration
+(function square (x) 
+	(* x x))
+(var square (square a))
+(console.log square)
+# Output: function square(x) { return x * x; }
+# ...	  var square = square(a);
+# ...	  console.log(square);
+
+#;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+# Simple arrow function declaration
+(=> () 5)
+# Output: (() => {return 5;})
+
+#;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+# Variable declaration with arrow function expr
+(var a (=> () 5))
+# Output: var a = () => { return 5;	};
+
+#;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+# Simple Macro Declaration
+(macro print ()
+	(console.log ~...rest))
+(print "Lets" "print" "a" a)
+# Output: console.log("Lets", "print", "a", a);
+
+#;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+# Simple if-else construct
+(if ((* 3 5)) ((console.log "true")) ((console.log "false")))
+# Output: if (3 * 5) {
+#...          console.log('true');
+#...      } else {
+#...          console.log('false');
+#...      }
