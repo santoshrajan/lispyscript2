@@ -2,7 +2,7 @@
 	((=> () ~...rest)))
 
 (macro when (cond)
-  (if (~cond) ((do ~...rest)) ()))
+  (if ~cond ((do ~...rest)) ()))
 
 (macro unless (cond)
   (when (! ~cond) (do ~...rest)))
