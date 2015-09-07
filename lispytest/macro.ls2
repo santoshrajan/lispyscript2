@@ -1,11 +1,11 @@
-(macro do ()
+(macro do (...rest)
 	((=> () ~...rest)))
 
-(macro when (cond)
+(macro when (cond ...rest)
   (if ~cond ((do ~...rest)) ()))
 
-(macro unless (cond)
-  (when (! ~cond) (do ~...rest)))
+(macro unless (cond ...rest)
+  (when (! ~cond) ~...rest))
 
 (when true (var a 5) (console.log a))
 
