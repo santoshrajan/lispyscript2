@@ -4,4 +4,9 @@
 (macro when (cond)
   (if (~cond) ((do ~...rest)) ()))
 
+(macro unless (cond)
+  (when (! ~cond) (do ~...rest)))
+
 (when true (var a 5) (console.log a))
+
+(unless false (console.log "Its too small!"))
