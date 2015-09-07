@@ -1,3 +1,7 @@
 (macro do ()
-	(=> () ~...rest))
-(do (var a 5) (console.log "Hey there, how you doing!"))
+	((=> () ~...rest)))
+
+(macro when (cond)
+  (if (~cond) ((do ~...rest)) ()))
+
+(when true (var a 5) (console.log a))
