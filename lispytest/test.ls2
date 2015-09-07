@@ -8,6 +8,7 @@
 #;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 # Simple function declaration
 (function square (x) 
+	(* x x)
 	(* x x))
 (var square (square a))
 (console.log square)
@@ -34,9 +35,15 @@
 
 #;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 # Simple if-else construct
-(if ((* 3 5)) ((console.log "true")) ((console.log "false")))
+(if ((* 3 5)) ((function abc (x) (* x 1) x) (console.log "true")) ((console.log "false")))
 # Output: if (3 * 5) {
 #...          console.log('true');
 #...      } else {
 #...          console.log('false');
 #...      }
+
+#;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+# Function declaration which returns a function
+(function abc () 
+	(=> () null))
+(var a (abc))
